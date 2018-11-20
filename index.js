@@ -13,7 +13,6 @@ function increaseRankBy(n){
     lis = rankedLists[i];
     for (let a = 0; a < lis.length; a++){
       lis[a].innerHTML = parseInt(lis[a]) + n;
-
-  }
+    }
   }
 }

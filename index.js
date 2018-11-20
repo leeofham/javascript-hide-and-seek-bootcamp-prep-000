@@ -20,13 +20,13 @@ function increaseRankBy(n){
 
 
 function deepestChild(){
-  const grand = document.querySelector("#grand-node")
-  const grandchild = grand.children;
+  fifo = document.querySelector(#grand-node) // first child in first child out
+  grandChild = fifo.children[0]              //
 
-  for (let i = 0; i < grandchild.length; i++){
-    grand = grandchild;
-    grandchild = grand.children[i]
-    
+  while(grandChild){
+    fifo = grandChild
+    grandChild = fifo.children[0]
   }
-  return grand
+return fifo;
+
 }

@@ -9,6 +9,4 @@ function nestedTarget(){
 function increaseRankBy(n){
     var sum = (document.querySelectorAll("ul.ranked-list li"))
     sum = parseInt(sum) + n
-
-    }
 }

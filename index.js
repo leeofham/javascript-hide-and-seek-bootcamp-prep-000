@@ -10,10 +10,10 @@ function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
 
   for (let i = 0; i < rankedLists.length; i++){
-    var lis = rankedLists[i].children;
+    var lis = rankedLists[i];
 
     for (let a = 0; a < lis.length; a++){
-      lis[a].innerHTML = parseInt(lis[a]) + n;
+      lis[a].innerHTML = parseInt(lis[a].innerHTML) + n;
     }
   }
 }

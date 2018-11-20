@@ -17,3 +17,16 @@ function increaseRankBy(n){
     }
   }
 }
+
+
+function deepestChild(){
+  const grand = document.querySelector("#grand-node")
+  const grandchild = grand.children;
+
+  for (let i = 0; i < grandchild.length; i++){
+    grand = grandchild;
+    grandchild = grand.children[i]
+    
+  }
+  return grand
+}
